@@ -49,7 +49,7 @@ npx packmap --help
 packmap -o build
 
 # specify path to package.json
-packmap -p ../my-package
+packmap -p ../my-package/package.json
 ```
 
 ## Javascript usage
