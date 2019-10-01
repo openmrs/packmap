@@ -1,0 +1,13 @@
+{
+  "imports": {
+    "@openmrs/esm-api": "/frontend/@openmrs/esm-api@1.0.4-alpha.0/dist/openmrs-esm-api.js",
+    "@openmrs/esm-login": "/frontend/@openmrs/esm-login@1.0.1-alpha.0/dist/openmrs-esm-login.js",
+    "@openmrs/esm-root-config": "/frontend/@openmrs/esm-root-config@1.1.0/dist/openmrs-esm-root-config.defaults.js",
+    "@openmrs/esm-styleguide": "/frontend/@openmrs/esm-styleguide@1.1.0/dist/openmrs-esm-styleguide.js",
+    "import-map-overrides": "/frontend/import-map-overrides@1.8.0/dist/import-map-overrides.js",
+    "react": "/frontend/react@16.10.1/umd/react.production.min.js",
+    "react-dom": "/frontend/react-dom@16.10.1/umd/react-dom.production.min.js",
+    "rxjs": "/frontend/rxjs@6.5.3/bundles/rxjs.umd.min.js",
+    "single-spa": "/frontend/single-spa@4.4.1/lib/umd/single-spa.min.js"
+  }
+}

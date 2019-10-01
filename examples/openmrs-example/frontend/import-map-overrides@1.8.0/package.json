@@ -1,27 +1,31 @@
 {
-  "_from": "import-map-overrides",
+  "_args": [
+    [
+      "import-map-overrides@1.8.0",
+      "/Users/joeldennning/code/packmap/examples/openmrs-example"
+    ]
+  ],
+  "_from": "import-map-overrides@1.8.0",
   "_id": "import-map-overrides@1.8.0",
   "_inBundle": false,
   "_integrity": "sha512-cWFaSbSRdwrIcNpcmqpMgwAxYjXhCG1tJrevn80ODknC3l3wmQe0rvwfg+3J6yi+aQpXBBHAEyIEXfWKupg1RQ==",
   "_location": "/import-map-overrides",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "import-map-overrides",
+    "raw": "import-map-overrides@1.8.0",
     "name": "import-map-overrides",
     "escapedName": "import-map-overrides",
-    "rawSpec": "",
+    "rawSpec": "1.8.0",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "1.8.0"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/import-map-overrides/-/import-map-overrides-1.8.0.tgz",
-  "_shasum": "d5b8f7b53ba74a0599ec242ed93bbae0eea71486",
-  "_spec": "import-map-overrides",
+  "_spec": "1.8.0",
   "_where": "/Users/joeldennning/code/packmap/examples/openmrs-example",
   "author": {
     "name": "Joel Denning",
@@ -33,9 +37,7 @@
   "bugs": {
     "url": "https://github.com/joeldenning/import-map-overrides/issues"
   },
-  "bundleDependencies": false,
   "dependencies": {},
-  "deprecated": false,
   "description": "A browser javascript library for being able to override [import maps](https://github.com/WICG/import-maps). This works with native browser import maps or with the [SystemJS](https://github.com/systemjs/systemjs) polyfill for import maps.",
   "devDependencies": {
     "@babel/core": "^7.5.5",
