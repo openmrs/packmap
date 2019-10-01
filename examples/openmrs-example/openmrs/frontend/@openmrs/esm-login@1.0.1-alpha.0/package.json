@@ -1,0 +1,113 @@
+{
+  "_args": [
+    [
+      "@openmrs/esm-login@1.0.1-alpha.0",
+      "/Users/joeldennning/code/packmap/examples/openmrs-example"
+    ]
+  ],
+  "_from": "@openmrs/esm-login@1.0.1-alpha.0",
+  "_id": "@openmrs/esm-login@1.0.1-alpha.0",
+  "_inBundle": false,
+  "_integrity": "sha512-uaP/3xR4LXjTJjobyjmAih7CuZBeved9GsWIXEz2wE64o/gdljrLaSIFDGlZNAPZQatDC2knH1h0YmG5Nyp8og==",
+  "_location": "/@openmrs/esm-login",
+  "_phantomChildren": {
+    "fhir.js": "0.0.20",
+    "lodash-es": "4.17.15",
+    "react": "16.10.1",
+    "rxjs": "6.5.3"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@openmrs/esm-login@1.0.1-alpha.0",
+    "name": "@openmrs/esm-login",
+    "escapedName": "@openmrs%2fesm-login",
+    "scope": "@openmrs",
+    "rawSpec": "1.0.1-alpha.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.1-alpha.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@openmrs/esm-login/-/esm-login-1.0.1-alpha.0.tgz",
+  "_spec": "1.0.1-alpha.0",
+  "_where": "/Users/joeldennning/code/packmap/examples/openmrs-example",
+  "browserslist": [
+    "extends browserslist-config-openmrs"
+  ],
+  "bugs": {
+    "url": "https://github.com/openmrs/openmrs-esm-login/issues"
+  },
+  "dependencies": {
+    "@openmrs/esm-api": "^1.0.3",
+    "@types/react": "^16.8.25",
+    "@types/react-dom": "^16.8.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "rxjs": "^6.5.3"
+  },
+  "description": "The login microfrontend for the OpenMRS SPA",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@openmrs/react-root-decorator": "^1.0.0",
+    "@types/jest": "^24.0.17",
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "browserslist-config-openmrs": "^1.0.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-ts-react-important-stuff": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "fork-ts-checker-webpack-plugin": "^1.5.0",
+    "husky": "^2.7.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.8.0",
+    "jest-cli": "^24.8.0",
+    "kremling": "^2.0.1",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "single-spa-react": "^2.10.2",
+    "style-loader": "^1.0.0",
+    "systemjs-webpack-interop": "^1.1.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "homepage": "https://github.com/openmrs/openmrs-esm-login#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm run lint && npm test && npm run typescript"
+    }
+  },
+  "main": "dist/openmrs-esm-login.js",
+  "name": "@openmrs/esm-login",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openmrs/openmrs-esm-login.git"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "lint": "eslint src --ext tsx",
+    "prepublishOnly": "npm run build",
+    "prettier": "prettier",
+    "start": "webpack-dev-server",
+    "start-https": "webpack-dev-server --https",
+    "test": "jest --config jest.config.json",
+    "typescript": "tsc"
+  },
+  "types": "src/openmrs-esm-login.d.tsx",
+  "version": "1.0.1-alpha.0"
+}

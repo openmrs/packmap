@@ -1,0 +1,201 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.omrs-type-serif {
+  font-family: "Merriweather", serif;
+}
+
+.omrs-bold {
+  font-weight: bold;
+}
+
+.omrs-italic {
+  font-style: italic;
+}
+
+.omrs-underline {
+  text-decoration: underline;
+}
+
+.omrs-type-title {
+  font-style: normal;
+  font-weight: bold;
+  color: var(--omrs-color-brand-black);
+}
+
+.omrs-type-title-1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.125rem;
+  line-height: 113.8%;
+  letter-spacing: 0.023rem;
+}
+
+.omrs-type-title-2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.875rem;
+  line-height: 121.5%;
+  letter-spacing: 0.054rem;
+  color: var(--omrs-color-brand-black);
+}
+
+.omrs-type-title-3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.688rem;
+  line-height: 125%;
+  letter-spacing: 0.05rem;
+  color: var(--omrs-color-brand-black);
+}
+
+.omrs-type-title-4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 129.6%;
+  letter-spacing: 0.047rem;
+  color: var(--omrs-color-brand-black);
+}
+
+.omrs-type-title-5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 129%;
+  color: var(--omrs-color-brand-black);
+}
+
+.omrs-type-body-large {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.188rem;
+  line-height: 129%;
+  color: var(--omrs-color-brand-black);
+}
+
+.omrs-type-body-regular {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.0625rem;
+  line-height: 147.6%;
+  color: var(--omrs-color-brand-black);
+}
+
+.omrs-type-body-small {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.937rem;
+  line-height: 138.3%;
+  letter-spacing: 0.0275rem;
+  color: var(--omrs-color-brand-black);
+}
+
+/* The below code was generated from https://google-webfonts-helper.herokuapp.com/fonts/roboto?subsets=latin */
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../../fonts/roboto-v19-latin/roboto-v19-latin-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/roboto-v19-latin/roboto-v19-latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-italic - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Roboto Italic"), local("Roboto-Italic"),
+    url("../../fonts/roboto-v19-latin/roboto-v19-latin-italic.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/roboto-v19-latin/roboto-v19-latin-italic.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../../fonts/roboto-v19-latin/roboto-v19-latin-700.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/roboto-v19-latin/roboto-v19-latin-700.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-700italic - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Roboto Bold Italic"), local("Roboto-BoldItalic"),
+    url("../../fonts/roboto-v19-latin/roboto-v19-latin-700italic.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/roboto-v19-latin/roboto-v19-latin-700italic.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* The below code was generated from https://google-webfonts-helper.herokuapp.com/fonts/merriweather?subsets=latin */
+/* merriweather-regular - latin */
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Merriweather Regular"), local("Merriweather-Regular"),
+    url("../../fonts/merriweather-v21-latin/merriweather-v21-latin-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/merriweather-v21-latin/merriweather-v21-latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* merriweather-italic - latin */
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Merriweather Italic"), local("Merriweather-Italic"),
+    url("../../fonts/merriweather-v21-latin/merriweather-v21-latin-italic.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/merriweather-v21-latin/merriweather-v21-latin-italic.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* merriweather-700 - latin */
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Merriweather Bold"), local("Merriweather-Bold"),
+    url("../../fonts/merriweather-v21-latin/merriweather-v21-latin-700.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/merriweather-v21-latin/merriweather-v21-latin-700.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* merriweather-700italic - latin */
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Merriweather Bold Italic"), local("Merriweather-BoldItalic"),
+    url("../../fonts/merriweather-v21-latin/merriweather-v21-latin-700italic.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/merriweather-v21-latin/merriweather-v21-latin-700italic.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

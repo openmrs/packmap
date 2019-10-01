@@ -1,0 +1,81 @@
+{
+  "_from": "import-map-overrides",
+  "_id": "import-map-overrides@1.8.0",
+  "_inBundle": false,
+  "_integrity": "sha512-cWFaSbSRdwrIcNpcmqpMgwAxYjXhCG1tJrevn80ODknC3l3wmQe0rvwfg+3J6yi+aQpXBBHAEyIEXfWKupg1RQ==",
+  "_location": "/import-map-overrides",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "import-map-overrides",
+    "name": "import-map-overrides",
+    "escapedName": "import-map-overrides",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/import-map-overrides/-/import-map-overrides-1.8.0.tgz",
+  "_shasum": "d5b8f7b53ba74a0599ec242ed93bbae0eea71486",
+  "_spec": "import-map-overrides",
+  "_where": "/Users/joeldennning/code/packmap/examples/openmrs-example",
+  "author": {
+    "name": "Joel Denning",
+    "email": "joeldenning@gmail.com"
+  },
+  "browserslist": [
+    "IE >= 11"
+  ],
+  "bugs": {
+    "url": "https://github.com/joeldenning/import-map-overrides/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "A browser javascript library for being able to override [import maps](https://github.com/WICG/import-maps). This works with native browser import maps or with the [SystemJS](https://github.com/systemjs/systemjs) polyfill for import maps.",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/preset-env": "^7.5.5",
+    "copyfiles": "^2.1.1",
+    "husky": "^3.0.3",
+    "preact": "^8.5.1",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.19.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-terser": "^5.1.1",
+    "serve": "^11.1.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/joeldenning/import-map-overrides#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "license": "MIT",
+  "main": "dist/import-map-overrides.js",
+  "name": "import-map-overrides",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeldenning/import-map-overrides.git"
+  },
+  "scripts": {
+    "build": "rimraf dist && rollup -c",
+    "prepublishOnly": "yarn build",
+    "test": "npm run build && copyfiles test/index.html dist -f && serve .",
+    "watch": "rollup -c --watch"
+  },
+  "version": "1.8.0"
+}

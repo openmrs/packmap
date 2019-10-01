@@ -1,0 +1,98 @@
+{
+  "_args": [
+    [
+      "@openmrs/esm-api@1.0.4-alpha.0",
+      "/Users/joeldennning/code/packmap/examples/openmrs-example"
+    ]
+  ],
+  "_from": "@openmrs/esm-api@1.0.4-alpha.0",
+  "_id": "@openmrs/esm-api@1.0.4-alpha.0",
+  "_inBundle": false,
+  "_integrity": "sha512-7AwltdOsUdxpjHu3Nzi95XE+yDPSHIos7hm9fDlEZu8XNF6rYWEzNhhnHggvQ330M6/EbRZWx6kF9+WIYminSg==",
+  "_location": "/@openmrs/esm-api",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@openmrs/esm-api@1.0.4-alpha.0",
+    "name": "@openmrs/esm-api",
+    "escapedName": "@openmrs%2fesm-api",
+    "scope": "@openmrs",
+    "rawSpec": "1.0.4-alpha.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.4-alpha.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@openmrs/esm-api/-/esm-api-1.0.4-alpha.0.tgz",
+  "_spec": "1.0.4-alpha.0",
+  "_where": "/Users/joeldennning/code/packmap/examples/openmrs-example",
+  "browserslist": [
+    "extends browserslist-config-openmrs"
+  ],
+  "bugs": {
+    "url": "https://github.com/openmrs/openmrs-esm-api/issues"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "rxjs": "^6.5.3"
+  },
+  "description": "The javascript module for interacting with the OpenMRS API",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/jest": "^24.0.17",
+    "babel-eslint": "^11.0.0-beta.0",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "browserslist-config-openmrs": "^1.0.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-ts-important-stuff": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "fhir.js": "0.0.20",
+    "fork-ts-checker-webpack-plugin": "^1.5.0",
+    "husky": "^3.0.3",
+    "jest": "^24.8.0",
+    "jest-cli": "^24.8.0",
+    "lodash-es": "^4.17.15",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "systemjs-webpack-interop": "^1.1.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "homepage": "https://github.com/openmrs/openmrs-esm-api#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm run lint && npm test && npm run typescript"
+    }
+  },
+  "keywords": [
+    "openmrs"
+  ],
+  "license": "MIT",
+  "main": "dist/openmrs-esm-api.js",
+  "name": "@openmrs/esm-api",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openmrs/openmrs-esm-api.git"
+  },
+  "scripts": {
+    "build": "webpack --mode=production",
+    "lint": "eslint src --ext ts",
+    "prepublishOnly": "npm run build",
+    "prettier": "prettier src/**/* --write",
+    "start": "webpack-dev-server",
+    "test": "jest",
+    "typescript": "tsc"
+  },
+  "types": "src/openmrs-esm-api.ts",
+  "version": "1.0.4-alpha.0"
+}
