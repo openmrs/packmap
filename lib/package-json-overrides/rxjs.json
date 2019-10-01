@@ -1,5 +1,5 @@
 {
-  "main": "umd/rxjs.umd.min.js",
+  "main": "bundles/rxjs.umd.min.js",
   "directories": {
     "lib": "bundles"
   },
