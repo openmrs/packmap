@@ -28,7 +28,7 @@ npm run build
 
 ## Explanation of packmap
 
-Packmap will create a browser-ready directory and import map from a package.json file. To use it, your packages must meet the following standards:
+Packmap will create a browser-ready directory and import map from a package.json file and node_modules. To use it, your packages must meet the following standards:
 
 1. All package.json `dependencies` must be in-browser dependencies instead of build-time dependencies.
 2. There must be only one version of every package. Semantic versioning rules apply.
