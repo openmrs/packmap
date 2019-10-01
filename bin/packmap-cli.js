@@ -5,7 +5,11 @@ const packmap = require("../lib/packmap.js");
 
 program.version(version);
 program.option("-o, --outdir <outdir>", "change the output directory", "dist");
-program.option("p, --package <package>", "path to package.json file", "package.json");
+program.option(
+  "p, --package <package>",
+  "path to package.json file",
+  "package.json"
+);
 
 program.parse(process.argv);
 
