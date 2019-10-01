@@ -14,7 +14,7 @@
     "@openmrs/esm-home": "^1.0.0",
     "@openmrs/esm-login": "^1.1.0",
     "@openmrs/esm-primary-navigation": "^1.0.0",
-    "@openmrs/esm-root-config": "^1.1.0",
+    "@openmrs/esm-root-config": "^1.1.1",
     "@openmrs/esm-styleguide": "^1.2.0",
     "import-map-overrides": "1.8.0",
     "react": "^16.10.1",
