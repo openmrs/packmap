@@ -32,7 +32,8 @@
   "homepage": "https://github.com/openmrs/packmap#readme",
   "dependencies": {
     "commander": "^3.0.2",
-    "fs-extra": "^8.1.0"
+    "fs-extra": "^8.1.0",
+    "sort-object-keys": "^1.1.2"
   },
   "devDependencies": {
     "husky": "^3.0.7",
