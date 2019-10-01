@@ -1,0 +1,42 @@
+{
+  "name": "packmap",
+  "version": "1.0.0",
+  "description": "Turn a package.json into a browser-ready import map",
+  "main": "lib/packmap.js",
+  "bin": "bin/packmap-cli.js",
+  "scripts": {
+    "test": "bin/packmap-cli.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openmrs/packmap.git"
+  },
+  "keywords": [
+    "import",
+    "map",
+    "esm",
+    "es",
+    "module",
+    "package"
+  ],
+  "author": "Joel Denning",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/openmrs/packmap/issues"
+  },
+  "homepage": "https://github.com/openmrs/packmap#readme",
+  "dependencies": {
+    "fs-extra": "^8.1.0"
+  },
+  "devDependencies": {
+    "commander": "^3.0.2",
+    "husky": "^3.0.7",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1"
+  }
+}

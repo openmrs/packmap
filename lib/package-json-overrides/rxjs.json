@@ -1,0 +1,7 @@
+{
+  "main": "umd/rxjs.umd.min.js",
+  "directories": {
+    "lib": "bundles"
+  },
+  "dependencies": {}
+}
