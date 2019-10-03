@@ -24,6 +24,10 @@
     "module",
     "package"
   ],
+  "files": [
+    "bin",
+    "lib"
+  ],
   "author": "Joel Denning",
   "license": "MPL-2.0",
   "bugs": {
