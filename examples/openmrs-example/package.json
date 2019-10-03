@@ -1,11 +1,11 @@
 {
   "name": "openmrs-example",
   "scripts": {
-    "build": "packmap -o frontend"
+    "build": "packmap -o openmrs/frontend"
   },
   "license": "MPL-2.0",
   "devDependencies": {
-    "packmap": "^1.0.0-alpha.2"
+    "packmap": "file:../.."
   },
   "dependencies": {
     "@openmrs/esm-api": "^1.0.4",
