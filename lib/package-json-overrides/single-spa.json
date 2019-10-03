@@ -1,0 +1,6 @@
+{
+  "main": "lib/system/single-spa.min.js",
+  "directories": {
+    "lib": "lib"
+  }
+}

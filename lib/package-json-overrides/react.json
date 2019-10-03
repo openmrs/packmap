@@ -1,0 +1,7 @@
+{
+  "main": "umd/react.production.min.js",
+  "directories": {
+    "lib": "umd"
+  },
+  "dependencies": {}
+}
