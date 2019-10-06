@@ -64,7 +64,7 @@ const packmap = require("packmap");
 
 const options = {
   outdir: "dist", // defaults to dist
-  package: "path/to/package.json" // defaults to package.json
+  package: "path/to/package.json", // defaults to package.json
   overrideMap: "path/to/override-map.json"
 };
 
