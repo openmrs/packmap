@@ -5,7 +5,7 @@
   "main": "lib/packmap.js",
   "bin": "bin/packmap-cli.js",
   "scripts": {
-    "check-format": "prettier 'lib/**/*' --check",
+    "check-format": "prettier 'lib/**/*' 'bin/**/*' '__mocks__/**/*' 'test/**/*' --check",
     "test": "jest --config jest.json"
   },
   "husky": {
