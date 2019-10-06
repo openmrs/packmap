@@ -14,6 +14,10 @@ program.option(
   "--override-map <overrideMap>",
   "path to importmap which overrides the generated map"
 );
+program.option(
+  "--cwd <cwd>",
+  "override the path to use as the current working directory"
+);
 
 program.parse(process.argv);
 
