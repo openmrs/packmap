@@ -10,6 +10,10 @@ program.option(
   "path to package.json file",
   "package.json"
 );
+program.option(
+  "--override-map <overrideMap>",
+  "path to importmap which overrides the generated map"
+);
 
 program.parse(process.argv);
 

@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "@openmrs/esm-api": "https://localhost:8081/esm-api-overridden.js",
+    "@openmrs/test-lib": "https://localhost:8082/test-lib.js"
+  }
+}
