@@ -1,6 +1,6 @@
 {
   "name": "packmap",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Turn a package.json into a browser-ready import map",
   "main": "lib/packmap.js",
   "bin": "bin/packmap-cli.js",
