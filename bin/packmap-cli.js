@@ -21,6 +21,8 @@ program.option(
 
 program.parse(process.argv);
 
+program.log = (...args) => console.log(...args);
+
 const initialTime = new Date().getTime();
 packmap(program)
   .then(() => {
