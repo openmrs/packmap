@@ -3,10 +3,7 @@ const path = require("path");
 
 exports.remove = jest.fn();
 exports.ensureDir = jest.fn();
-
 exports.appendFile = jest.fn();
-
-let copiedFiles = {};
 exports.copy = jest.fn();
 
 let mockedFiles = {};
