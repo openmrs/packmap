@@ -9,8 +9,8 @@ exports.copy = jest.fn();
 let mockedFiles = {};
 exports.readFileSync = jest.fn();
 
-exports.mockMainPackageJson = (__dirname, object) => {
-  const filePath = path.resolve(__dirname, "package.json");
+exports.mockMainPackageJson = object => {
+  const filePath = path.resolve("/", "package.json");
   mockedFiles[filePath] = JSON.stringify(object, null, 2);
 };
 
@@ -33,14 +33,14 @@ exports.getOutputImportMap = () => {
   return JSON.parse(result[1]);
 };
 
-exports.getOutputModuleDir = (baseDir, moduleName) => {
+exports.getOutputModuleDir = moduleName => {
   const result = exports.copy.mock.calls.find(mockCall =>
     mockCall[0].startsWith(`/node_modules/${moduleName}`)
   );
   if (!result) {
     throw Error(`No output directory was created for module '${moduleName}'`);
   }
-  return result[1].replace(baseDir, "");
+  return result[1];
 };
 
 beforeEach(() => {

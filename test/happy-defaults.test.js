@@ -5,7 +5,7 @@ jest.mock("../lib/require-resolve.js");
 
 describe(`happy defaults`, () => {
   it(`creates an import map and dist directory`, () => {
-    fsMock.mockMainPackageJson(__dirname, {
+    fsMock.mockMainPackageJson({
       version: "1.2.3",
       dependencies: {
         "please-be-in-import-map": "4.5.6",
@@ -29,7 +29,7 @@ describe(`happy defaults`, () => {
     return packmap({
       outdir: "dist",
       package: "package.json",
-      cwd: __dirname
+      cwd: "/"
     }).then(() => {
       expect(fsMock.getOutputImportMap()).toEqual({
         imports: {
@@ -38,10 +38,10 @@ describe(`happy defaults`, () => {
           "another-thing": "/dist/another-thing@0.0.0/index.js"
         }
       });
-      expect(
-        fsMock.getOutputModuleDir(__dirname, "please-be-in-import-map")
-      ).toBe("/dist/please-be-in-import-map@4.5.6");
-      expect(fsMock.getOutputModuleDir(__dirname, "another-thing")).toBe(
+      expect(fsMock.getOutputModuleDir("please-be-in-import-map")).toBe(
+        "/dist/please-be-in-import-map@4.5.6"
+      );
+      expect(fsMock.getOutputModuleDir("another-thing")).toBe(
         "/dist/another-thing@0.0.0"
       );
     });
