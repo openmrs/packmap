@@ -61,3 +61,6 @@ typings/
 .next
 
 dist
+
+# generated folder in openmrs exmaple 
+examples/openmrs-example/openmrs/
