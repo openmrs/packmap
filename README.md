@@ -50,6 +50,9 @@ packmap -o build
 
 # specify path to package.json
 packmap -p ../my-package/package.json
+
+# specify path to import-map which overrides generated import-map
+packmap --override-map ./override-import-map.json
 ```
 
 ## Javascript usage
@@ -62,6 +65,7 @@ const packmap = require("packmap");
 const options = {
   outdir: "dist", // defaults to dist
   package: "path/to/package.json" // defaults to package.json
+  overrideMap: "path/to/override-map.json"
 };
 
 packmap(options)
