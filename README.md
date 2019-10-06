@@ -68,6 +68,7 @@ Packmap is a node package that is used as follows:
 const packmap = require("packmap");
 
 const options = {
+<<<<<<< HEAD
   // required
   outdir: "dist",
 
@@ -86,6 +87,11 @@ const options = {
   log(message) {
     console.log(message);
   }
+=======
+  outdir: "dist", // defaults to dist
+  package: "path/to/package.json", // defaults to package.json
+  overrideMap: "path/to/override-map.json"
+>>>>>>> origin/master
 };
 
 packmap(options)
