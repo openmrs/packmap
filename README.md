@@ -53,6 +53,11 @@ packmap -p ../my-package/package.json
 
 # specify path to import-map which overrides generated import-map
 packmap --override-map ./override-import-map.json
+
+# specify current working directory to base relative urls on.
+# In this example, the main package.json will be loaded from subdir, and the
+# outputted dist director will also be created inside of subdir.
+packmap --cwd ./subdir
 ```
 
 ## Javascript usage
@@ -63,9 +68,24 @@ Packmap is a node package that is used as follows:
 const packmap = require("packmap");
 
 const options = {
-  outdir: "dist", // defaults to dist
-  package: "path/to/package.json", // defaults to package.json
-  overrideMap: "path/to/override-map.json"
+  // required
+  outdir: "dist",
+
+  // required
+  package: "path/to/package.json",
+
+  // optional
+  overrideMap: "path/to/override-map.json",
+
+  // optional - defaults to process.cwd()
+  cwd: "./subdir",
+
+  // optional - defaults to not logging any packmap info messages.
+  // The log function can be used to pipe the logged output of packmap to
+  // whatever you'd like it to (stdout, other file, something else).
+  log(message) {
+    console.log(message);
+  }
 };
 
 packmap(options)

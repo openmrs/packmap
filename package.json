@@ -5,7 +5,8 @@
   "main": "lib/packmap.js",
   "bin": "bin/packmap-cli.js",
   "scripts": {
-    "test": "bin/packmap-cli.js"
+    "check-format": "prettier 'lib/**/*' 'bin/**/*' '__mocks__/**/*' 'test/**/*' --check",
+    "test": "jest --config jest.json"
   },
   "husky": {
     "hooks": {
@@ -40,7 +41,10 @@
     "sort-object-keys": "^1.1.2"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.18",
     "husky": "^3.0.7",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
     "prettier": "^1.18.2",
     "pretty-quick": "^1.11.1"
   }
