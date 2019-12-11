@@ -18,6 +18,7 @@ program.option(
   "--cwd <cwd>",
   "override the path to use as the current working directory"
 );
+program.option("-v, --verbose", "print lots of stuff");
 
 program.parse(process.argv);
 
