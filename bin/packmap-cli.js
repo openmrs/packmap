@@ -19,6 +19,10 @@ program.option(
   "path to importmap which overrides the generated map"
 );
 program.option(
+  "--exclude-packages <excludePackages>",
+  "path to a file containing npm packages to skip when pack-mapping"
+);
+program.option(
   "--cwd <cwd>",
   "override the path to use as the current working directory"
 );

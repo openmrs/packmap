@@ -8,6 +8,7 @@ exports.copy = jest.fn();
 
 let mockedFiles = {};
 exports.readFileSync = jest.fn();
+exports.pathExists = jest.fn();
 
 exports.mockMainPackageJson = object => {
   const filePath = path.resolve("/", "package.json");
@@ -20,6 +21,10 @@ exports.mockDepPackageJson = (depName, object) => {
     null,
     2
   );
+};
+
+exports.mockFile = (filePath, object) => {
+  mockedFiles[filePath] = JSON.stringify(object, null, 2);
 };
 
 exports.getOutputImportMap = () => {
@@ -58,6 +63,11 @@ beforeEach(() => {
     } else {
       throw Error(`File not mocked for tests - ${path}`);
     }
+  });
+
+  exports.pathExists.mockReset();
+  exports.pathExists.mockImplementation(path => {
+    return mockedFiles[path] !== undefined || mockedFiles[path] !== null;
   });
 
   exports.copy.mockReset();
