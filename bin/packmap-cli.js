@@ -6,6 +6,10 @@ const packmap = require("../lib/packmap.js");
 program.version(version);
 program.option("-o, --outdir <outdir>", "change the output directory", "dist");
 program.option(
+  "--base-url <baseUrl>",
+  "base url to use as prefix when generating the import map"
+);
+program.option(
   "-p, --package <package>",
   "path to package.json file",
   "package.json"
