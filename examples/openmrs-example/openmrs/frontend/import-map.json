@@ -1,16 +1,15 @@
 {
   "imports": {
-    "@openmrs/esm-api": "/openmrs/frontend/@openmrs/esm-api@1.0.4/dist/openmrs-esm-api.js",
-    "@openmrs/esm-devtools": "/openmrs/frontend/@openmrs/esm-devtools@1.1.0/dist/openmrs-esm-devtools.js",
-    "@openmrs/esm-error-handling": "/openmrs/frontend/@openmrs/esm-error-handling@1.0.1/index.js",
-    "@openmrs/esm-home": "/openmrs/frontend/@openmrs/esm-home@1.0.0/dist/openmrs-esm-home.js",
-    "@openmrs/esm-login": "/openmrs/frontend/@openmrs/esm-login@1.1.0/dist/openmrs-esm-login.js",
-    "@openmrs/esm-primary-navigation": "/openmrs/frontend/@openmrs/esm-primary-navigation@1.0.0/dist/openmrs-esm-primary-navigation.js",
+    "@openmrs/esm-api": "https://www.openmrs.com/openmrs/frontend/@openmrs/esm-api@1.0.4/dist/openmrs-esm-api.js",
+    "@openmrs/esm-error-handling": "https://www.openmrs.com/openmrs/frontend/@openmrs/esm-error-handling@1.0.1/index.js",
+    "@openmrs/esm-home": "https://www.openmrs.com/openmrs/frontend/@openmrs/esm-home@1.0.0/dist/openmrs-esm-home.js",
+    "@openmrs/esm-login": "https://www.openmrs.com/openmrs/frontend/@openmrs/esm-login@1.1.0/dist/openmrs-esm-login.js",
+    "@openmrs/esm-primary-navigation": "https://www.openmrs.com/openmrs/frontend/@openmrs/esm-primary-navigation@1.0.0/dist/openmrs-esm-primary-navigation.js",
     "@openmrs/esm-root-config": "/openmrs/frontend/@openmrs/esm-root-config@1.1.1/dist/openmrs-esm-root-config.defaults.js",
-    "@openmrs/esm-styleguide": "/openmrs/frontend/@openmrs/esm-styleguide@1.2.0/dist/openmrs-esm-styleguide.js",
-    "react": "/openmrs/frontend/react@16.10.1/umd/react.production.min.js",
-    "react-dom": "/openmrs/frontend/react-dom@16.10.1/umd/react-dom.production.min.js",
-    "rxjs": "/openmrs/frontend/rxjs@6.5.3/bundles/rxjs.umd.min.js",
-    "single-spa": "/openmrs/frontend/single-spa@4.4.1/lib/system/single-spa.min.js"
+    "@openmrs/esm-styleguide": "https://www.openmrs.com/openmrs/frontend/@openmrs/esm-styleguide@1.2.0/dist/openmrs-esm-styleguide.js",
+    "react": "https://www.openmrs.com/openmrs/frontend/react@16.10.1/umd/react.production.min.js",
+    "react-dom": "https://www.openmrs.com/openmrs/frontend/react-dom@16.10.1/umd/react-dom.production.min.js",
+    "rxjs": "https://www.openmrs.com/openmrs/frontend/rxjs@6.5.3/bundles/rxjs.umd.min.js",
+    "single-spa": "https://www.openmrs.com/openmrs/frontend/single-spa@4.4.1/lib/system/single-spa.min.js"
   }
 }

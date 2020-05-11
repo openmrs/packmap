@@ -1,7 +1,7 @@
 {
   "name": "openmrs-example",
   "scripts": {
-    "build": "packmap -o openmrs/frontend --override-map ./override-import-map.json  --base-url https://www.whatever.com"
+    "build": "packmap -o openmrs/frontend --override-map ./override-import-map.json --base-url https://www.openmrs.com --exclude-packages ./exclude-packages.json"
   },
   "license": "MPL-2.0",
   "devDependencies": {
